@@ -96,8 +96,9 @@ class Library:
         print(f'Book Name: {book.title} by {book.author}')
 
 
-Ans To The Question Nmuber 5
 
+
+Ans To The Question Nmuber 5
 5. Implement return_book() method:
 
 class Book:
@@ -137,8 +138,8 @@ class Library:
 
 
 
-Ans To The Question Nmuber 6
 
+Ans To The Question Nmuber 6
 6. Implement view_book_info() method:
 
 class Book:
@@ -183,8 +184,9 @@ class Library:
         print(f'Book Name: {book.title} by {book.author}')
 
 
-Ans To The Question Nmuber 7
 
+
+Ans To The Question Nmuber 7
 7. Menu System:
 
 class Book:
@@ -265,7 +267,6 @@ while True:
 
 
 Ans To The Question Nmuber 8
-
 8. Error Handling:
 
 class Book:
@@ -372,7 +373,6 @@ while True:
 
 
 Ans To The Question Nmuber 9
-
 9. Data Privacy:
 
 class Book:
