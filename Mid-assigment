@@ -1,0 +1,495 @@
+Ans To The Question Nmuber 1
+1. Create the Library class:
+ 
+class Library:
+    book_list = []
+    @classmethod
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+
+
+
+
+Ans To The Question Nmuber 2
+2. Create the Book class: 
+
+class Book:
+    def __init__(self, book_id, title, author, 
+   availability=True):
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.availability = availability
+
+
+    def __str__(self):
+        return f'Book ID: {self.book_id}, Title: {self.title}, 
+        Author: {self.author}, Available: {self.availability}'
+
+
+
+
+Ans To The Question Nmuber 3
+3. Initialize Book Object:
+
+class Book:
+    def __init__(self, book_id, title, author, availability=True):
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.availability = availability
+
+
+    def __str__(self):
+        return f'Book ID: {self.book_id}, Title: {self.title},  
+        Author:{self.author}, Available: {self.availability}'
+
+
+class Library:
+    book_list = []
+
+
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+
+
+
+Ans To The Question Nmuber 4
+
+4. Implement borrow_book() method:
+
+class Book:
+    def __init__(self, book_id, title, author, availability=True):
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.availability = availability
+   
+    def borrow_book(self):
+        if self.availability:
+            self.availability = False
+            print(f'available for borrowing {self.title} by {self.author}.')
+        else:
+            print(f'Sorry, {self.title} by {self.author} is currently unavailable.')
+
+
+    def __str__(self):
+        return f'Book ID: {self.book_id}, Title: {self.title}, Author: {self.author}, Available: {self.availability}'
+     
+class Library:
+    book_list = []
+
+
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+Ans To The Question Nmuber 5
+
+5. Implement return_book() method:
+
+class Book:
+    def __init__(self, book_id, title, author, availability=True):
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.availability = availability
+   
+    def borrow_book(self):
+        if self.availability:
+            self.availability = False
+            print(f'available for borrowing {self.title} by {self.author}.')
+        else:
+            print(f'Sorry, {self.title} by {self.author} is currently unavailable.')
+
+
+    def __str__(self):
+        return f'Book ID: {self.book_id}, Title: {self.title}, Author: {self.author}, Available: {self.availability}'
+   
+def return_book(self):
+        if self.availability:
+            print(f'Book Name: {self.title} by {self.author} is already in the library. No need to return it.')
+        else:
+            self.availability = True
+            print(f'Book Name: {self.title} by {self.author} has been returned to the library.')
+
+
+class Library:
+    book_list = []
+
+
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+
+
+Ans To The Question Nmuber 6
+
+6. Implement view_book_info() method:
+
+class Book:
+    def __init__(self, book_id, title, author, availability=True):
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.availability = availability
+   
+    def borrow_book(self):
+        if self.availability:
+            self.availability = False
+            print(f'available for borrowing {self.title} by {self.author}.')
+        else:
+            print(f'Sorry, {self.title} by {self.author} is currently unavailable.')
+
+
+    def __str__(self):
+        return f'Book ID: {self.book_id}, Title: {self.title}, Author: {self.author}, Available: {self.availability}'
+   
+def return_book(self):
+        if self.availability:
+            print(f'Book Name: {self.title} by {self.author} is already in the library. No need to return it.')
+        else:
+            self.availability = True
+            print(f'Book Name: {self.title} by {self.author} has been returned to the library.')
+
+
+def view_book_info(self):
+        print(f'Book ID: {self.book_id}')
+        print(f'Title: {self.title}')
+        print(f'Author: {self.author}')
+        print(f'Availability: {'Available' if self.availability else 'Unavailable'}')
+
+
+class Library:
+    book_list = []
+
+
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+Ans To The Question Nmuber 7
+
+7. Menu System:
+
+class Book:
+    def __init__(self, book_id, title, author, availability=True):
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.availability = availability
+   
+    def borrow_book(self):
+        if self.availability:
+            self.availability = False
+            print(f'available for borrowing {self.title} by {self.author}.')
+        else:
+            print(f'Sorry, {self.title} by {self.author} is currently unavailable.')
+
+
+    def __str__(self):
+        return f'Book ID: {self.book_id}, Title: {self.title}, Author: {self.author}, Available: {self.availability}'
+   
+    def return_book(self):
+        if self.availability:
+            print(f'Book Name: {self.title} by {self.author} is already in the library. No need to return it.')
+        else:
+            self.availability = True
+            print(f'Book Name: {self.title} by {self.author} has been returned to the library.')
+
+
+def view_book_info(self):
+        print(f'Book ID: {self.book_id}')
+        print(f'Title: {self.title}')
+        print(f'Author: {self.author}')
+        print(f'Availability: {'Available' if self.availability else 'Unavailable'}')
+
+
+class Library:
+    book_list = []
+
+
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+    def view_all_books(self):
+        for book in self.book_list:
+            book.view_book_info()
+
+
+while True:
+        try:
+            choice = int(input('Enter your choice: '))
+
+
+            if choice == 1:
+                Library.view_all_books()
+            elif choice == 2:
+                book_id = int(input('Enter the book ID to borrow: '))
+                Book.borrow_book(book_id)
+            elif choice == 3:
+                book_id = int(input('Enter the book ID to return: '))
+                Book.return_book(book_id)
+            elif choice == 4:
+                print('Exiting the library system.')
+                break
+            else:
+                print('Invalid choice.')
+
+
+        except ValueError:
+            print('Invalid input. Please enter a valid number.')
+
+
+
+
+
+
+
+
+Ans To The Question Nmuber 8
+
+8. Error Handling:
+
+class Book:
+    def __init__(self, book_id, title, author, availability=True):
+        self.book_id = book_id
+        self.title = title
+        self.author = author
+        self.availability = availability
+   
+    def borrow_book(self):
+        if self.availability:
+            self.availability = False
+            print(f'available for borrowing {self.title} by {self.author}.')
+        else:
+            print(f'Sorry, {self.title} by {self.author} is currently unavailable.')
+
+
+    def __str__(self):
+        return f'Book ID: {self.book_id}, Title: {self.title}, Author: {self.author}, Available: {self.availability}'
+   
+    def return_book(self):
+        if self.availability:
+            print(f'Book Name: {self.title} by {self.author} is already in the library. No need to return it.')
+        else:
+            self.availability = True
+            print(f'Book Name: {self.title} by {self.author} has been returned to the library.')
+
+
+    def view_book_info(self):
+        print(f'Book ID: {self.book_id}')
+        print(f'Title: {self.title}')
+        print(f'Author: {self.author}')
+        print(f'Availability: {'Available' if self.availability else 'Unavailable'}')
+
+
+class Library:
+    book_list = []
+
+
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+    @classmethod
+    def view_all_books(self):
+        if not self.book_list:
+            print('No books available in the library.')
+        else:
+            for book in self.book_list:
+                book.view_book_info()
+   
+    @classmethod
+    def find_book_by_id(self, book_id):
+        for book in self.book_list:
+            if book.book_id == book_id:
+                return book
+        return None
+
+
+while True:
+        try:
+            choice = int(input('Enter your choice: '))
+
+
+            if choice == 1:
+                Library.view_all_books()
+            elif choice == 2:
+                try:
+                    book_id = int(input('Enter the Book ID to borrow: '))
+                    book = Library.find_book_by_id(book_id)
+                    if book:
+                        book.borrow_book()
+                    else:
+                        print('Invalid Book ID.')
+                except ValueError as e:
+                    print(e)
+
+
+            elif choice == 3:
+                try:
+                    book_id = int(input('Enter the Book ID to return: '))
+                    book = Library.find_book_by_id(book_id)
+                    if book:
+                        book.return_book()
+                    else:
+                        print('Invalid Book ID.')
+                except ValueError as e:
+                    print(e)
+
+
+            elif choice == 4:
+                print('Exiting the library system.')
+                break
+            else:
+                print('Invalid choice.')
+
+
+        except ValueError:
+            print('Invalid input. Please enter a valid number.')
+
+
+
+
+
+Ans To The Question Nmuber 9
+
+9. Data Privacy:
+
+class Book:
+    def __init__(self, book_id, title, author, availability=True):
+        self.__book_id = book_id
+        self.__title = title
+        self.__author = author
+        self.__availability = availability
+   
+    def borrow_book(self):
+        if self.__availability:
+            self.__availability = False
+            print(f'available for borrowing {self.__title} by {self.__author}.')
+        else:
+            print(f'Sorry, {self.__title} by {self.__author} is currently unavailable.')
+
+
+    def __str__(self):
+        return f'Book ID: {self.__book_id}, Title: {self.__title}, Author: {self.__author}, Available: {self.__availability}'
+   
+    def return_book(self):
+        if self.__availability:
+            print(f'Book Name: {self.__title} by {self.__author} is already in the library. No need to return it.')
+        else:
+            self.__availability = True
+            print(f'Book Name: {self.__title} by {self.__author} has been returned to the library.')
+
+
+    def view_book_info(self):
+        print(f'Book ID: {self.__book_id}')
+        print(f'Title: {self.__title}')
+        print(f'Author: {self.__author}')
+        print(f'Availability: {'Available' if self.__availability else 'Unavailable'}')
+
+
+    # def get_book_id(self):
+    #     return self.__book_id
+
+
+    # def get_title(self):
+    #     return self.__title
+
+
+    # def get_author(self):
+    #     return self.__author
+
+
+    # def is_available(self):
+    #     return self.__availability
+
+
+class Library:
+    book_list = []
+   
+    @classmethod
+    def entry_book(self, book):
+        self.book_list.append(book)
+        print(f'Book Name: {book.title} by {book.author}')
+
+
+    @classmethod
+    def view_all_books(self):
+        if not self.book_list:
+            print('No books available in the library.')
+        else:
+            for book in self.book_list:
+                book.view_book_info()
+   
+    @classmethod
+    def find_book_by_id(self, book_id):
+        for book in self.book_list:
+            if book.book_id == book_id:
+                return book
+        return None
+
+
+while True:
+        try:
+            choice = int(input('Enter your choice: '))
+
+
+            if choice == 1:
+                Library.view_all_books()
+            elif choice == 2:
+                try:
+                    book_id = int(input('Enter the Book ID to borrow: '))
+                    book = Library.find_book_by_id(book_id)
+                    if book:
+                        book.borrow_book()
+                    else:
+                        print('Invalid Book ID.')
+                except ValueError as e:
+                    print(e)
+
+
+            elif choice == 3:
+                try:
+                    book_id = int(input('Enter the Book ID to return: '))
+                    book = Library.find_book_by_id(book_id)
+                    if book:
+                        book.return_book()
+                    else:
+                        print('Invalid Book ID.')
+                except ValueError as e:
+                    print(e)
+
+
+            elif choice == 4:
+                print('Exiting the library system.')
+                break
+            else:
+                print('Invalid choice.')
+
+
+        except ValueError:
+            print('Invalid input. Please enter a valid number.')
+
+
+
+
